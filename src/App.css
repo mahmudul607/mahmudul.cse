@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.color-switcher{
+  width: 10rem;
+  position: absolute;
+  background-color: lightgray;
+  padding: 1rem;
+  right: 0;
+  top: 50%;
+  transform: translate(100%, -50%);
+  transition: all 0.5s ease-in-out;
+}
+.color-switcher--open{
+  transform: translate(0, -50%);
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading{
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+.color-list{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.color-item{
+  width: 2rem;
+  height: 2rem;
+  background-color: var(--bg-color);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.color-switcher button{
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  color: red;
+  font-size: 1.5rem;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translate(-100%, -50%);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+ 
+}
+.ri-settings-2-line {
+  
+  position: relative;
+  display: inline-block;
+  font-size: 1.5rem;
+  animation: mymove 2s linear infinite;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+
+@keyframes mymove {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+
+.App .header-area{
+  width: 30%;
+  height: 100%;
+  
+
+}
+.App .body-content{
+  width: 70%;
+  height: 900px;
+  overflow: auto;
+}
+.App .main-area{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  
 }

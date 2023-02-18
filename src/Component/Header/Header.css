@@ -1,0 +1,23 @@
+.navbar .container{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    
+}
+#basic-navbar-nav .me-auto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    
+}
+.navbar .navbar-brand img{
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px double  white;
+}
+.navbar .navbar-brand{
+    display: grid;
+    place-items: center;
+    border-bottom: 5px double white;
+}
