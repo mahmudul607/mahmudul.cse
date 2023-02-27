@@ -6,7 +6,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import myPhoto from '../../images/mh.PNG';
 
-function Header() {
+function Header({handleNavClick}) {
+
+  
   return (
     <Navbar sticky="top" style={{background:'var(--bg-color'}} expand="md">
       <Container>
@@ -18,13 +20,13 @@ function Header() {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link href="#Home">Home</Nav.Link>
-            <Nav.Link href="#About">About Me</Nav.Link>
-            <Nav.Link href="#Passion">My Passion</Nav.Link>
-            <Nav.Link href="#Resume">Resume</Nav.Link>
-            <Nav.Link href="#Portfolio">Portfolio</Nav.Link>
-            <Nav.Link href="#Testimonial">Testimonial</Nav.Link>
-            <Nav.Link href="#Contact">Contact</Nav.Link>
+            <Nav.Link className='links' href="#Home">Home</Nav.Link>
+            <Nav.Link className='links' href="#About">About Me</Nav.Link>
+            <Nav.Link className='links' href="#Passion">My Passion</Nav.Link>
+            <Nav.Link className='links' href="#Resume">Resume</Nav.Link>
+            <Nav.Link className='links' href="#Portfolio">Portfolio</Nav.Link>
+            <Nav.Link className='links' href="#Testimonial">Testimonial</Nav.Link>
+            <Nav.Link className='links' href="#Contact">Contact</Nav.Link>
             {/* <NavDropdown title="Dropdown" id="basic-nav-dropdown">
               <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
               <NavDropdown.Item href="#action/3.2">

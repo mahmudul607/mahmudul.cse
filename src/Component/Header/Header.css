@@ -21,3 +21,7 @@
     place-items: center;
     border-bottom: 5px double white;
 }
+
+.me-auto .nav-link::selection{
+    color: blueviolet !important;
+}

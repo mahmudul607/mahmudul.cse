@@ -1,0 +1,20 @@
+.home-page{
+    background:linear-gradient( rgb(29, 28, 28, 0.6), rgb(85, 84, 84, 0.6)), url(../../../src/images/pic\ \(2\).jpg);
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.home-text-area{
+    color: white !important;
+    position: absolute;
+    text-align: center;
+    vertical-align: center;
+    width:50%;
+    top: 30%;
+    left:20%;
+}
+span{
+    font-size: 30px;
+}

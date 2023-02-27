@@ -7,6 +7,9 @@ import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Passion from './Component/Passion/Passion';
 
+
+
+
 function App() {
   const colors = ['#2d3436', '#4834d4', '#be2edd', '#f9ca24', '#6ab04c', '#30336b', 'red']
 
@@ -27,19 +30,37 @@ function App() {
     localStorage.setItem('color', currentColor);
 
   }
+  const handleNavClick = (section) => {
+    document.getElementById(section).scrollIntoView({ behavior: "smooth" });
+  };
+
+
+ 
+  
+ 
+ 
 
 
   return (
     <div className='App'>
       <div className='main-area'>
         <div className='header-area'>
-          <Header></Header>
+          <Header handleNavClick={handleNavClick}></Header>
 
         </div>
         <div className='body-content'>
+          <div id='sec-1' className='section'>
           <Home></Home>
+          </div>
+          <div id='sec-2'  className='section'>
           <AboutMe></AboutMe>
+          </div>
+          <div id='sec-3'  className='section'>
           <Passion></Passion>
+          </div>
+          
+          
+          
           {/* color changer */}
           <div className={`color-switcher ${state && 'color-switcher--open'}`}>
             <button onClick={() => setState(prevState => !prevState)}><i className="ri-settings-2-line"></i></button>
