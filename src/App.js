@@ -10,6 +10,8 @@ import Passion from './Component/Passion/Passion';
 
 
 
+
+
 function App() {
   const colors = ['#2d3436', '#4834d4', '#be2edd', '#f9ca24', '#6ab04c', '#30336b', 'red']
 
@@ -30,10 +32,11 @@ function App() {
     localStorage.setItem('color', currentColor);
 
   }
+ 
+  // others
   const handleNavClick = (section) => {
     document.getElementById(section).scrollIntoView({ behavior: "smooth" });
   };
-
 
  
   
@@ -50,7 +53,7 @@ function App() {
         </div>
         <div className='body-content'>
           <div id='sec-1' className='section'>
-          <Home></Home>
+          <Home handleNavClick={handleNavClick}></Home>
           </div>
           <div id='sec-2'  className='section'>
           <AboutMe></AboutMe>
@@ -58,11 +61,16 @@ function App() {
           <div id='sec-3'  className='section'>
           <Passion></Passion>
           </div>
+          <div id='sec-4'  className='section'>
+          
+          </div>
           
           
           
-          {/* color changer */}
-          <div className={`color-switcher ${state && 'color-switcher--open'}`}>
+         
+        </div>
+         {/* color changer */}
+         <div className={`color-switcher ${state && 'color-switcher--open'}`}>
             <button onClick={() => setState(prevState => !prevState)}><i className="ri-settings-2-line"></i></button>
             <h1 className='heading'>Select Color</h1>
             <div className='color-list'>
@@ -73,7 +81,6 @@ function App() {
             </div>
           </div>
           {/* end color changer */}
-        </div>
 
       </div>
 

@@ -1,3 +1,9 @@
+body{
+  height: 100%;
+}
+html{
+  height: 100%;
+}
 .color-switcher{
   width: 10rem;
   position: absolute;
@@ -23,6 +29,7 @@
   gap: 1rem;
 
 }
+
 
 .color-item{
   width: 2rem;
@@ -68,14 +75,27 @@
   
 
 }
-.App .body-content{
-  width: 70%;
-  height: 900px;
-  overflow: auto;
+.App .body-content{ 
+  position: relative;
+	width: 80%;
+	left: 65%;
+	background-color: #ecf1f1;
+	text-align: center;
+	-webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
 }
 .App .main-area{
   display: flex;
   
+}
+.App .header-area{
+  position: fixed;
+	top: 5%;
+	bottom: auto;
+	z-index: 10;
 }
 
 

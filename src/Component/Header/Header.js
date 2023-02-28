@@ -1,28 +1,94 @@
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './Header.css';
 import myPhoto from '../../images/mh.PNG';
+import {Link} from 'react-scroll'
+import { useState } from 'react';
 
-function Header({handleNavClick}) {
+
+const Header = ({homeRef, handleNavClick}) => {
+  const [isNavModalClose, setIsNavModalClose] = useState(true);
 
   
   return (
-    <Navbar sticky="top" style={{background:'var(--bg-color'}} expand="md">
+    <Navbar sticky="top" expand="md">
       <Container>
-        <Navbar.Brand href="#home">
+        <Link 
+                  className='navbar-brand' 
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  offset={-400}
+                  spy
+                  to="Home"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}>
             <img src={myPhoto} alt=""/>
             <h3>Mahmudul Hasan</h3>
             <h6>FrontEnd Developer</h6>
-            </Navbar.Brand>
+            </Link>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
-            <Nav.Link className='links' href="#Home">Home</Nav.Link>
-            <Nav.Link className='links' href="#About">About Me</Nav.Link>
-            <Nav.Link className='links' href="#Passion">My Passion</Nav.Link>
+            <Link   
+                  className="nav-link "
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  offset={-300}
+                  spy
+                  to="Home"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}>
+                Home
+            </Link>
+            <Link   
+                  className="nav-link "
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  offset={0}
+                  spy
+                  to="About"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}>
+                About
+            </Link>
+            <Link   
+                  className="nav-link "
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  spy
+                  to="Passion"
+                  offset={0}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}>
+                My Passion
+            </Link>
+            {/* <Link to="About" spy={true} smooth={true} offset={-100} duration={500}  >
+            <Nav.Link className='links' >About Me</Nav.Link>
+            </Link>
+            <Link  to="Passion" spy={true} smooth={true} offset={-150} duration={500}>
+            <Nav.Link className='links' >My Passion</Nav.Link>
+            </Link> */}
+            
+            
+            
             <Nav.Link className='links' href="#Resume">Resume</Nav.Link>
             <Nav.Link className='links' href="#Portfolio">Portfolio</Nav.Link>
             <Nav.Link className='links' href="#Testimonial">Testimonial</Nav.Link>
