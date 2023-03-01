@@ -52,10 +52,12 @@ position: relative;
 #About .about-details .about-me-text{
     color: white;
     padding: 2%;
+    text-align: left;
 }
 #About .about-details .about-me-text p{
     font-size: 15px;
     line-height: 20px;
+   
 }
 #About .about-details .about-me-text span{
     color: var(--bg-color);
@@ -64,6 +66,7 @@ position: relative;
 #About .about-details .contact-details{
     color: white;
     padding: 1%;
+    text-align: left;
 
 }
 li{

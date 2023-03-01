@@ -69,8 +69,11 @@ function App() {
           
          
         </div>
-         {/* color changer */}
-         <div className={`color-switcher ${state && 'color-switcher--open'}`}>
+        
+
+      </div>
+ {/* color changer */}
+ <div className={`color-switcher ${state && 'color-switcher--open'}`}>
             <button onClick={() => setState(prevState => !prevState)}><i className="ri-settings-2-line"></i></button>
             <h1 className='heading'>Select Color</h1>
             <div className='color-list'>
@@ -81,9 +84,6 @@ function App() {
             </div>
           </div>
           {/* end color changer */}
-
-      </div>
-
 
 
     </div>

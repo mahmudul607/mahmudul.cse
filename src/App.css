@@ -1,12 +1,14 @@
 body{
   height: 100%;
+
 }
 html{
   height: 100%;
+  
 }
 .color-switcher{
   width: 10rem;
-  position: absolute;
+  position: fixed;
   background-color: lightgray;
   padding: 1rem;
   right: 0;
@@ -53,7 +55,7 @@ html{
   cursor: pointer;
  
 }
-.ri-settings-2-line {
+.ri-settings-2-l ine {
   
   position: relative;
   display: inline-block;
