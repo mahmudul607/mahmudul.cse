@@ -1,0 +1,14 @@
+#Passion .about-me-title{
+    min-height: 30vh;
+    height: 30%;
+    margin-bottom: 0 !important;
+}
+#Passion .item-box{
+    display: flex;
+    padding: 2%;
+    
+    flex-wrap: wrap;
+    min-height: 70vh;
+    height: 70%;
+    width: 100%;
+}

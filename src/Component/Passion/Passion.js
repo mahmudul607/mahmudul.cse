@@ -1,10 +1,13 @@
-import React, { useState } from 'react';
+import React from 'react';
 import './Passion.css';
 import Data from '../../Data/Data'
 import PassionItem from '../PassionItem/PassionItem';
-import {FaPalette, FaDesktop, FaPencilRuler, FaPaintBrush, FaChartArea, FaBullhorn } from 'react-icons/fa';
+
+
 
 const Passion = () => {
+   
+      
    
     const passionData = Data;
     
@@ -13,12 +16,14 @@ const Passion = () => {
             <div className='about-me-title'>
                 <h1>Passion</h1>
                 <p>What I Do ?</p>
-                {passionData.length}
                 
             </div>
+            <div className='item-box'>
             {
                 passionData.map(ps => <PassionItem ps={ps}></PassionItem>)
             }
+                
+            </div>
         </div>
     );
 };

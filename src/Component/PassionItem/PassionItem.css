@@ -1,0 +1,36 @@
+.passion-item{
+    display: flex;
+    width: 50%;
+    height: 120px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+  
+}
+
+.passion-item .passion-item-icon{
+    color: var(--bg-color);
+    height: 100%;
+    width: 30%;
+    
+}
+.passion-item .passion-item-icon .icon{
+    font-size: 70px;
+    text-align: center;
+    padding: 10%;
+    background-color: black;
+    border-radius: 10px;
+}
+.passion-item .item-text{
+    text-align: left !important;
+    padding-left: 5%;
+    padding-right: 2%;
+}
+.passion-item .item-text h3{
+    color: var(--bg-color)
+
+}
+.passion-item .item-text p{
+    color: white;
+
+}
