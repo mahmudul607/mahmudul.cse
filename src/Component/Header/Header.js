@@ -21,7 +21,7 @@ const Header = ({homeRef, handleNavClick}) => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                   activeClass="active"
-                  offset={-400}
+                  offset={100}
                   spy
                   to="Home"
                   onClick={(e) => {
@@ -41,7 +41,7 @@ const Header = ({homeRef, handleNavClick}) => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                   activeClass="active"
-                  offset={-300}
+                  offset={-100}
                   spy
                   to="Home"
                   onClick={(e) => {

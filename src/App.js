@@ -45,13 +45,14 @@ function App() {
 
 
   return (
-    <div className='App'>
+    <div className='App' style={{height:'100%'}}>
       <div className='main-area'>
         <div className='header-area'>
           <Header handleNavClick={handleNavClick}></Header>
 
         </div>
         <div className='body-content'>
+        
           <div id='sec-1' className='section'>
           <Home handleNavClick={handleNavClick}></Home>
           </div>
@@ -64,6 +65,8 @@ function App() {
           <div id='sec-4'  className='section'>
           
           </div>
+            
+          
           
           
           

@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaServicestack } from 'react-icons/fa';
+import {  FaSketch } from 'react-icons/fa';
 import './PassionItem.css'
 
 const PassionItem = ({ ps }) => {
@@ -12,7 +12,9 @@ const PassionItem = ({ ps }) => {
     return (
         <div className='passion-item'>
             <div className='passion-item-icon'>
-                <FaServicestack className='icon' />
+                <div className='icon-area'>
+                <FaSketch className='icon' />
+                </div>
             </div>
             <div className='item-text'>
                 <h3>{title}</h3>

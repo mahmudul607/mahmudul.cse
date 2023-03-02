@@ -1,11 +1,8 @@
-body{
-  height: 100%;
 
-}
-html{
+/* html{
   height: 100%;
   
-}
+} */
 .color-switcher{
   width: 10rem;
   position: fixed;
@@ -15,6 +12,17 @@ html{
   top: 50%;
   transform: translate(100%, -50%);
   transition: all 0.5s ease-in-out;
+}
+.header-area{
+  width: 25%;
+  height: 100%;
+  position: fixed;
+  background-color: lightgray;
+  left: 0;
+  top: 0;
+  transform: translate(0%, 0%);
+  transition: all 0.5s ease-in-out;
+  z-index: 100;
 }
 .color-switcher--open{
   transform: translate(0, -50%);
@@ -55,7 +63,7 @@ html{
   cursor: pointer;
  
 }
-.ri-settings-2-l ine {
+.ri-settings-2-line{
   
   position: relative;
   display: inline-block;
@@ -71,16 +79,17 @@ html{
 }
 
 
-.App .header-area{
+/* .App .header-area{
   width: 30%;
   height: 100%;
   
 
-}
+} */
 .App .body-content{ 
   position: relative;
 	width: 80%;
 	left: 65%;
+  overflow: scroll;
 	background-color: #ecf1f1;
 	text-align: center;
 	-webkit-transform: translateX(-50%);
@@ -93,11 +102,12 @@ html{
   display: flex;
   
 }
-.App .header-area{
+/* .App .header-area{
   position: fixed;
 	top: 5%;
 	bottom: auto;
 	z-index: 10;
-}
+} */
+
 
 

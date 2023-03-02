@@ -4,7 +4,7 @@ import Typewriter from 'typewriter-effect';
 import {FaAngleDown} from  'react-icons/fa';
 const Home = () => {
     return (
-        <div className='home-page' id='Home' style={{height:'100%',  minHeight:'100vh'}}>
+        <div className='home-page' id='Home' style={{minHeight:'100vh' , height:'25%'}}>
             <div className='home-text-area'>
                 <h1>Welcome</h1>
                 <Typewriter 

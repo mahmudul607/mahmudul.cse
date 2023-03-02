@@ -14,10 +14,10 @@
     width: 30%;
     
 }
-.passion-item .passion-item-icon .icon{
-    font-size: 70px;
+.passion-item .passion-item-icon .icon-area{
+    height: 80%;
     text-align: center;
-    padding: 10%;
+    padding: 5%;
     background-color: black;
     border-radius: 10px;
 }
@@ -34,3 +34,15 @@
     color: white;
 
 }
+
+.passion-item .passion-item-icon .icon-area .icon {
+    font-size: 40px !important;
+    position: relative;
+    display: inline-block;
+    font-size: 1.5rem;
+  
+  }
+  
+  
+  
+  
