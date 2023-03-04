@@ -3,7 +3,7 @@ import './AboutMe.css'
 
 const AboutMe = () => {
     return (
-        <div id='About' style={{ minHeight: '100vh', padding: '20px' }}>
+        <section id='About' style={{ minHeight: '100vh', padding: '20px' }}>
             <div className='about-me-title'>
                 <h1>About me</h1>
                 <p>Know Me More</p>
@@ -64,7 +64,7 @@ const AboutMe = () => {
 
 
                     </div>
-        </div>
+        </section>
     );
 };
 

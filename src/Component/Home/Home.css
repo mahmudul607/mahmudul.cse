@@ -9,7 +9,7 @@
 
 .home-page .home-text-area{
     color: white !important;
-    position: absolute;
+    position: relative;
     text-align: center;
     vertical-align: center;
     width:50%;

@@ -12,7 +12,7 @@ const Passion = () => {
     const passionData = Data;
     
     return (
-        <div id='Passion' style={{minHeight:'100vh', background:'#343a40'}}>
+        <section id='Passion' style={{minHeight:'100vh', background:'#343a40'}}>
             <div className='about-me-title'>
                 <h1>Passion</h1>
                 <p>What I Do ?</p>
@@ -24,7 +24,7 @@ const Passion = () => {
             }
                 
             </div>
-        </div>
+        </section>
     );
 };
 

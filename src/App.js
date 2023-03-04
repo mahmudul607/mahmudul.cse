@@ -6,6 +6,7 @@ import ColorItem from './Component/Color-item';
 import Header from './Component/Header/Header';
 import Home from './Component/Home/Home';
 import Passion from './Component/Passion/Passion';
+import Resume from './Component/Resume/Resume';
 
 
 
@@ -45,26 +46,26 @@ function App() {
 
 
   return (
-    <div className='App' style={{height:'100%'}}>
+    <div className='App'>
       <div className='main-area'>
         <div className='header-area'>
           <Header handleNavClick={handleNavClick}></Header>
 
         </div>
-        <div className='body-content'>
+        <div className='body-content' >
         
-          <div id='sec-1' className='section'>
-          <Home handleNavClick={handleNavClick}></Home>
-          </div>
-          <div id='sec-2'  className='section'>
-          <AboutMe></AboutMe>
-          </div>
-          <div id='sec-3'  className='section'>
-          <Passion></Passion>
-          </div>
-          <div id='sec-4'  className='section'>
           
-          </div>
+          <Home handleNavClick={handleNavClick}></Home>
+          
+          
+          <AboutMe></AboutMe>
+       
+          
+          <Passion></Passion>
+        
+         
+          <Resume></Resume>
+          
             
           
           

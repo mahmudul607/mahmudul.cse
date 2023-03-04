@@ -21,7 +21,7 @@ const Header = ({homeRef, handleNavClick}) => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                   activeClass="active"
-                  offset={100}
+                  offset={0}
                   spy
                   to="Home"
                   onClick={(e) => {
@@ -41,7 +41,7 @@ const Header = ({homeRef, handleNavClick}) => {
                   duration={500}
                   style={{ cursor: "pointer" }}
                   activeClass="active"
-                  offset={-100}
+                  offset={0}
                   spy
                   to="Home"
                   onClick={(e) => {
@@ -80,6 +80,21 @@ const Header = ({homeRef, handleNavClick}) => {
                   }}>
                 My Passion
             </Link>
+            <Link   
+                  className="nav-link "
+                  smooth
+                  duration={500}
+                  style={{ cursor: "pointer" }}
+                  activeClass="active"
+                  spy
+                  to="Resume"
+                  offset={0}
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setIsNavModalClose(true);
+                  }}>
+                Resume
+            </Link>
             {/* <Link to="About" spy={true} smooth={true} offset={-100} duration={500}  >
             <Nav.Link className='links' >About Me</Nav.Link>
             </Link>
@@ -89,7 +104,7 @@ const Header = ({homeRef, handleNavClick}) => {
             
             
             
-            <Nav.Link className='links' href="#Resume">Resume</Nav.Link>
+            
             <Nav.Link className='links' href="#Portfolio">Portfolio</Nav.Link>
             <Nav.Link className='links' href="#Testimonial">Testimonial</Nav.Link>
             <Nav.Link className='links' href="#Contact">Contact</Nav.Link>

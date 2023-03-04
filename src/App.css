@@ -1,8 +1,8 @@
 
-/* html{
+body , html{
   height: 100%;
   
-} */
+}
 .color-switcher{
   width: 10rem;
   position: fixed;
@@ -108,6 +108,5 @@
 	bottom: auto;
 	z-index: 10;
 } */
-
 
 
